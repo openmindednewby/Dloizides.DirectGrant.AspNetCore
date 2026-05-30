@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Dloizides.DirectGrant.AspNetCore/Dloizides.DirectGrant.AspNetCore.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Dloizides.DirectGrant.AspNetCore.Tests/Dloizides.DirectGrant.AspNetCore.Tests.csproj" />
+  </Folder>
+</Solution>
