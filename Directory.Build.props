@@ -1,4 +1,4 @@
-<Project>
+﻿<Project>
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <LangVersion>latest</LangVersion>
@@ -19,9 +19,9 @@
     <Description>Shared-secret gate for "external direct-grant" internal verify endpoints. A custom Keycloak direct-grant authenticator calls back to a service to verify a credential (OTP, PIN, ...); this package factors out the one security primitive those callback endpoints duplicate: a constant-time, fail-closed, 401-no-body shared-secret header check, configured per method via named options. Each service keeps its own verify DTOs and logic and swaps its bespoke IsAuthorized() for AddExternalDirectGrant(name) + IExternalDirectGrantGate.</Description>
 
     <!-- Versioning (publish.ps1 bumps this; first publish lands on 1.0.0). -->
-    <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
 
     <!-- NuGet settings -->
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -44,3 +44,4 @@
     <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
+
