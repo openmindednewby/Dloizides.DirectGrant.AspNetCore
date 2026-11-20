@@ -6,13 +6,7 @@ using Microsoft.Extensions.Options;
 
 namespace Dloizides.DirectGrant.AspNetCore;
 
-/// <summary>
-/// Default <see cref="IExternalDirectGrantGate"/>. Reads the named
-/// <see cref="ExternalDirectGrantOptions"/>, then header-checks the shared
-/// secret with a constant-time comparison. Fails closed: a blank configured
-/// key or header name rejects every request and is logged as an error (it is
-/// an operator misconfiguration, not a client error).
-/// </summary>
+/// <summary>Default <see cref="IExternalDirectGrantGate"/>: constant-time header check that fails closed.</summary>
 public sealed class ExternalDirectGrantGate : IExternalDirectGrantGate
 {
     private readonly IOptionsMonitor<ExternalDirectGrantOptions> _options;

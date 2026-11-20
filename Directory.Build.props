@@ -39,7 +39,7 @@
 
   <ItemGroup>
     <PackageReference Include="Dloizides.Analyzers" Version="0.6.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.401" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
